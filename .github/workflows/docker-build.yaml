@@ -15,4 +15,5 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build Docker image
-        run: docker build -t latihan-docker-ci .
+        run: docker build -t latihan-docker-ci -f ci-latihan/Dockerfile ./ci-latihan
+
