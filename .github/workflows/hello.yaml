@@ -1,0 +1,11 @@
+name: Hello World
+
+on: push  # jalan setiap kali ada git push
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello
+        run: echo "Halo, saya workflow pertama saya!"
