@@ -8,4 +8,4 @@ jobs:
 
     steps:
       - name: Print Hello
-        run: echo "Halo, saya workflow pertama saya!"
+        run: echo "Halo dunia"
