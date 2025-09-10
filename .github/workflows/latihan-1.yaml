@@ -1,0 +1,18 @@
+name: Latihan 1 - Workflow Dasar
+
+# Trigger: workflow ini akan jalan saat ada push ke branch manapun
+on: push
+
+jobs:
+  belajar-dasar:
+    runs-on: ubuntu-latest   # runner = mesin OS Linux
+
+    steps:
+      - name: Step 1 - Halo
+        run: echo "Halo, ini workflow pertamaku!"
+
+      - name: Step 2 - Tampilkan lokasi
+        run: pwd
+
+      - name: Step 3 - Lihat isi folder
+        run: ls -la
